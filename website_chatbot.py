@@ -22,7 +22,7 @@ from langchain.prompts import PromptTemplate
 # Expect OPENAI_API_KEY in Streamlit secrets for deployment (Streamlit Cloud/GitHub)
 # Add this to .streamlit/secrets.toml:
 # OPENAI_API_KEY = "sk-..."
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="Chat with Websites", page_icon="🌐")
 st.title("Chat with your Websites 🌐")
